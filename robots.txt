@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you
+
+Sitemap: https://legacyplumbinggroup.netlify.app/sitemap.xml
