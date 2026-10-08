@@ -13,3 +13,9 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# v2 preview: its form posts to /v2/thank-you.
+[[redirects]]
+  from = "/v2/thank-you"
+  to = "/v2/thank-you.html"
+  status = 200
