@@ -19,3 +19,9 @@
   from = "/v2/thank-you"
   to = "/v2/thank-you.html"
   status = 200
+
+# v3 preview: its form posts to /v3/thank-you.
+[[redirects]]
+  from = "/v3/thank-you"
+  to = "/v3/thank-you.html"
+  status = 200

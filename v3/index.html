@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en" data-scene>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Legacy Plumbing Group | Plumbers for Nashville &amp; Knoxville, TN</title>
+    <meta
+      name="description"
+      content="Residential and commercial plumbing across Middle and East Tennessee: custom-home rough-ins, tankless water heaters, water treatment, bath fixtures, and repairs. Call 615-524-9201 or 865-308-0794."
+    />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://legacyplumbinggroup.netlify.app/v3/" />
+    <meta name="theme-color" content="#05080f" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png" />
+    <link rel="apple-touch-icon" href="../favicon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Legacy Plumbing Group" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Legacy Plumbing Group | Plumbers for Nashville &amp; Knoxville, TN" />
+    <meta
+      property="og:description"
+      content="Custom-home rough-ins, tankless systems, water treatment, bath fixtures, and repairs across Middle and East Tennessee."
+    />
+    <meta property="og:url" content="https://legacyplumbinggroup.netlify.app/v3/" />
+    <meta property="og:image" content="https://legacyplumbinggroup.netlify.app/assets/custom-home-rough-in.jpg" />
+    <meta property="og:image:width" content="1800" />
+    <meta property="og:image:height" content="1114" />
+    <meta property="og:image:alt" content="Legacy Plumbing Group work trucks in front of a brick custom home under construction" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Legacy Plumbing Group | Plumbers for Nashville &amp; Knoxville, TN" />
+    <meta
+      name="twitter:description"
+      content="Custom-home rough-ins, tankless systems, water treatment, bath fixtures, and repairs across Middle and East Tennessee."
+    />
+    <meta name="twitter:image" content="https://legacyplumbinggroup.netlify.app/assets/custom-home-rough-in.jpg" />
+
+    <!-- Three.js r170, pinned. The minified build of the same release keeps the download small. -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!-- Decide before first paint: full 3D, or the static poster. -->
+    <script>
+      (function () {
+        var h = document.documentElement, s = null;
+        try { s = localStorage.getItem("lpg-v3-fx"); } catch (e) {}
+        var gl = "WebGL2RenderingContext" in window;
+        var rm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var c = navigator.connection;
+        var phone = matchMedia("(max-width: 760px), (pointer: coarse)").matches;
+        var saver = !!(c && c.saveData) && phone;
+        var on = gl && (s === "on" || (s !== "off" && !rm && !saver));
+        h.classList.add(on ? "fx" : "no-fx");
+        if (!gl) h.classList.add("no-gl");
+        if (on && h.hasAttribute("data-scene")) {
+          var B = "https://cdn.jsdelivr.net/npm/three@0.170.0/", J = B + "examples/jsm/";
+          [B + "build/three.module.min.js", "/v3/scene.js", J + "postprocessing/EffectComposer.js", J + "postprocessing/RenderPass.js",
+           J + "postprocessing/UnrealBloomPass.js", J + "postprocessing/OutputPass.js", J + "postprocessing/Pass.js",
+           J + "postprocessing/ShaderPass.js", J + "postprocessing/MaskPass.js", J + "shaders/CopyShader.js",
+           J + "shaders/LuminosityHighPassShader.js", J + "shaders/OutputShader.js", J + "environments/RoomEnvironment.js"
+          ].forEach(function (u) {
+            var l = document.createElement("link");
+            l.rel = "modulepreload";
+            l.href = u;
+            document.head.appendChild(l);
+          });
+        }
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" />
+    </noscript>
+    <link rel="stylesheet" href="/v3/styles.css" />
+    <script type="module" src="/v3/main.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": "Legacy Plumbing Group",
+        "description": "Residential and commercial plumbing in Middle and East Tennessee: custom-home rough-ins, tankless water heaters, water treatment, bath fixtures, repairs, and drain service.",
+        "url": "https://legacyplumbinggroup.netlify.app/",
+        "image": "https://legacyplumbinggroup.netlify.app/assets/custom-home-rough-in.jpg",
+        "logo": "https://legacyplumbinggroup.netlify.app/assets/legacy-logo.jpg",
+        "telephone": "+1-615-524-9201",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "TN",
+          "addressCountry": "US"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "name": "Nashville and Middle Tennessee",
+            "telephone": "+1-615-524-9201",
+            "contactType": "customer service",
+            "areaServed": "Middle Tennessee",
+            "availableLanguage": "English"
+          },
+          {
+            "@type": "ContactPoint",
+            "name": "Knoxville and East Tennessee",
+            "telephone": "+1-865-308-0794",
+            "contactType": "customer service",
+            "areaServed": "East Tennessee",
+            "availableLanguage": "English"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Nashville",
+            "containedInPlace": { "@type": "State", "name": "Tennessee" }
+          },
+          {
+            "@type": "City",
+            "name": "Knoxville",
+            "containedInPlace": { "@type": "State", "name": "Tennessee" }
+          }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59",
+            "description": "Emergency plumbing calls answered 24/7 by phone. Estimates and planned work are scheduled by appointment."
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/LegacyPG26",
+          "https://www.instagram.com/legacy.plumbing.group/",
+          "https://www.tiktok.com/@legacy_plumbing_group"
+        ]
+      }
+    </script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Loader: a pressure gauge that reads the page coming up to pressure. Decorative only. -->
+    <div class="gauge-loader" aria-hidden="true">
+      <div class="gauge-wrap">
+        <svg class="gauge" viewBox="0 0 240 240" width="240" height="240">
+          <circle class="g-bezel" cx="120" cy="120" r="114" />
+          <path class="g-track" d="M43.6 196.4A108 108 0 1 1 196.4 196.4" />
+          <path class="g-fill" d="M43.6 196.4A108 108 0 1 1 196.4 196.4" pathLength="100" stroke-dasharray="0 100" />
+          <path
+            class="g-ticks"
+            d="M49.3 190.7L59.2 180.8M42.9 183.7L48.3 179.3M37.3 176.2L43.1 172.3M32.4 168.2L38.5 164.8M28.2 159.7L34.6 156.9M24.9 150.9L38.2 146.6M22.4 141.8L29.2 140.3M20.8 132.5L27.7 131.7M20.0 123.1L27.0 122.9M20.2 113.7L27.2 114.2M21.2 104.4L35.1 106.5M23.1 95.1L29.9 96.9M25.9 86.1L32.5 88.5M29.5 77.4L35.9 80.4M33.9 69.1L40.0 72.7M39.1 61.2L50.4 69.5M45.0 53.9L50.2 58.5M51.5 47.1L56.3 52.2M58.7 41.0L63.0 46.5M66.4 35.6L70.2 41.5M74.6 30.9L81.0 43.4M83.2 27.0L85.8 33.5M92.1 24.0L94.1 30.7M101.3 21.8L102.6 28.6M110.6 20.4L111.2 27.4M120.0 20.0L120.0 34.0M129.4 20.4L128.8 27.4M138.7 21.8L137.4 28.6M147.9 24.0L145.9 30.7M156.8 27.0L154.2 33.5M165.4 30.9L159.0 43.4M173.6 35.6L169.8 41.5M181.3 41.0L177.0 46.5M188.5 47.1L183.7 52.2M195.0 53.9L189.8 58.5M200.9 61.2L189.6 69.5M206.1 69.1L200.0 72.7M210.5 77.4L204.1 80.4M214.1 86.1L207.5 88.5M216.9 95.1L210.1 96.9M218.8 104.4L204.9 106.5M219.8 113.7L212.8 114.2M220.0 123.1L213.0 122.9M219.2 132.5L212.3 131.7M217.6 141.8L210.8 140.3M215.1 150.9L201.8 146.6M211.8 159.7L205.4 156.9M207.6 168.2L201.5 164.8M202.7 176.2L196.9 172.3M197.1 183.7L191.7 179.3M190.7 190.7L180.8 180.8"
+          />
+          <text class="g-num-label" x="69.1" y="174.9">0</text>
+          <text class="g-num-label" x="48.9" y="112.7">20</text>
+          <text class="g-num-label" x="87.3" y="59.8">40</text>
+          <text class="g-num-label" x="152.7" y="59.8">60</text>
+          <text class="g-num-label" x="191.1" y="112.7">80</text>
+          <text class="g-num-label" x="170.9" y="174.9">100</text>
+          <text class="g-unit" x="120" y="166">PSI</text>
+          <path class="g-needle" d="M120 134L115.4 120L120 30L124.6 120Z" />
+          <circle class="g-hub" cx="120" cy="120" r="9" />
+        </svg>
+        <p class="g-read"><span class="g-num">0</span></p>
+        <p class="g-ok">PRESSURE OK</p>
+      </div>
+    </div>
+
+    <canvas class="scene" aria-hidden="true"></canvas>
+    <div class="scrim" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/v3/">
+          <img src="../assets/legacy-wordmark.png" width="841" height="458" alt="Legacy Plumbing Group, home" />
+        </a>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+          <ul role="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">Why Legacy</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#area">Service area</a></li>
+            <li class="nav-extra"><a href="#request">Request service</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="fx-toggle" aria-pressed="false" aria-label="Reduce effects">
+            <span class="fx-state" aria-hidden="true"></span>
+            <span class="fx-label">Reduce effects</span>
+          </button>
+          <button type="button" class="call-trigger" popovertarget="call-sheet">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8Z" /></svg>
+            Call now
+          </button>
+          <a class="btn btn-copper btn-sm" href="/v3/book.html" data-magnet>Book an estimate</a>
+          <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+            <span class="menu-toggle-bars" aria-hidden="true"></span>
+            Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="call-sheet" class="call-sheet" popover aria-labelledby="call-sheet-title">
+      <div class="call-sheet-head">
+        <div>
+          <p class="call-sheet-title" id="call-sheet-title">Call Legacy Plumbing Group</p>
+          <p class="call-sheet-note">Choose the number for your area. Emergency calls are answered 24/7.</p>
+        </div>
+        <button type="button" class="call-close" popovertarget="call-sheet" popovertargetaction="hide" aria-label="Close">&times;</button>
+      </div>
+      <a class="call-option" href="tel:+16155249201">
+        <span class="call-region">Nashville &amp; Middle Tennessee</span>
+        <span class="call-number tel">615-524-9201</span>
+      </a>
+      <a class="call-option" href="tel:+18653080794">
+        <span class="call-region">Knoxville &amp; East Tennessee</span>
+        <span class="call-number tel">865-308-0794</span>
+      </a>
+    </div>
+
+    <main id="main">
+      <!-- Hero: the 3D rough-in builds behind the headline. Without 3D, the custom-home photo stands in. -->
+      <section class="hero" data-cam="hero" aria-labelledby="hero-title">
+        <figure class="hero-poster">
+          <!-- Lazy on purpose: this photo only renders in the no-3D mode, so the 3D page never downloads it. -->
+          <img
+            src="../assets/custom-home-rough-in.jpg"
+            width="1800"
+            height="1114"
+            loading="lazy"
+            decoding="async"
+            alt="Two white Legacy Plumbing Group work trucks parked in front of a large brick custom home under construction"
+          />
+          <figcaption>Legacy trucks on site for a custom-home rough-in.</figcaption>
+        </figure>
+
+        <button type="button" class="flush">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.5 8.3 6.5 11.9A6.5 6.5 0 0 1 5.5 14.4C5.5 10.8 8.4 7.1 12 2.5Z" /></svg>
+          Flush the lines
+        </button>
+
+        <div class="wrap hero-inner">
+          <h1 id="hero-title" class="hero-title" data-kinetic>Built right before the walls close.</h1>
+          <div class="hero-lede">
+            <div>
+              <p class="hero-lead">Plumbing built for homes that expect better.</p>
+              <p class="hero-copy">
+                Rough-ins, tankless systems, water treatment, and finish fixtures, installed with care for homeowners,
+                builders, and businesses across Middle and East Tennessee.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-copper" href="/v3/book.html" data-magnet>Book a free estimate</a>
+              <a class="btn btn-line" href="#request" data-magnet>Request service</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-strip">
+          <div class="wrap strip-inner">
+            <div>
+              <h2 class="strip-title">Leak or flooding right now? Call us.</h2>
+              <p class="strip-note">If you can do it safely, shut off the main water valve while you wait.</p>
+            </div>
+            <div class="phone-chips">
+              <a class="phone-chip" href="tel:+16155249201"><span>Nashville</span><strong>615-524-9201</strong></a>
+              <a class="phone-chip" href="tel:+18653080794"><span>Knoxville</span><strong>865-308-0794</strong></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services: hovering or focusing a tile lights up its part of the 3D network. -->
+      <section class="sect" id="services" data-cam="services" aria-labelledby="services-title">
+        <div class="wrap">
+          <div class="sect-head">
+            <h2 id="services-title" class="display" data-split>What we handle</h2>
+            <p class="lead">
+              New construction, service calls, and everything in between, for homeowners, builders, and commercial
+              clients.
+            </p>
+          </div>
+          <ul class="tiles" role="list">
+            <li class="tile" data-obj="rough">
+              <h3>Rough-In Plumbing</h3>
+              <p>Groundwork, top-out, waste and vent lines, water distribution, and layout coordination.</p>
+              <a class="tile-link" href="#request" data-service="New construction rough-in">Request rough-in work</a>
+            </li>
+            <li class="tile" data-obj="treatment">
+              <h3>Water Treatment</h3>
+              <p>Filtration, softening, pressure, and whole-home water quality systems installed cleanly.</p>
+              <a class="tile-link" href="#request" data-service="Water treatment">Request water treatment</a>
+            </li>
+            <li class="tile" data-obj="tankless">
+              <h3>Tankless Systems</h3>
+              <p>Indoor and exterior tankless water heaters with copper, gas, venting, and service access.</p>
+              <a class="tile-link" href="#request" data-service="Water heater (tankless)">Request a tankless install</a>
+            </li>
+            <li class="tile" data-obj="bath">
+              <h3>Bath Fixtures</h3>
+              <p>Showers, tubs, vanities, trim, and specialty fixtures finished with careful alignment.</p>
+              <a class="tile-link" href="#request" data-service="Bathroom fixtures">Request fixture work</a>
+            </li>
+            <li class="tile" data-obj="repairs">
+              <h3>Repairs &amp; Drain Service</h3>
+              <p>Leaks, slow or clogged drains, sewer lines, and failed water heaters, found fast and explained before we fix them.</p>
+              <a class="tile-link" href="#request" data-service="Drain / leak repair">Request a repair</a>
+            </li>
+            <li class="tile" data-obj="commercial">
+              <h3>Commercial</h3>
+              <p>Plumbing for commercial build-outs and renovations. Send drawings or a scope and we will prepare a bid.</p>
+              <a class="tile-link" href="#request" data-service="Commercial bid">Request a commercial bid</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects: ordered from underground work to final trim. -->
+      <section class="sect" id="projects" data-cam="projects" aria-labelledby="projects-title">
+        <div class="wrap projects-head">
+          <div class="sect-head">
+            <h2 id="projects-title" class="display" data-split>From underground lines to polished final trim.</h2>
+            <p class="lead">
+              Legacy handles the hidden systems that make a home work and the visible details homeowners touch every
+              day.
+            </p>
+          </div>
+          <div class="reel-controls">
+            <button type="button" class="reel-btn" data-reel="-1" aria-controls="project-reel" aria-label="Previous photo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+            </button>
+            <button type="button" class="reel-btn" data-reel="1" aria-controls="project-reel" aria-label="Next photo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
+            </button>
+          </div>
+        </div>
+        <div class="reel" id="project-reel" tabindex="0" role="region" aria-label="Project photos, scroll sideways">
+          <ul class="reel-list" role="list">
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/slab-rough-plumbing.jpg" width="1440" height="1080" loading="lazy" decoding="async" alt="White drain and vent rough plumbing laid out before concrete" /></div>
+                <figcaption>White drain and vent rough plumbing laid out before concrete.</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/sewer-line-install.jpg" width="943" height="2048" loading="lazy" decoding="async" alt="Excavated sewer line installation with blue vertical pipe" /></div>
+                <figcaption>Excavated sewer line installation with blue vertical pipe</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/new-project-16.jpg" width="1600" height="2844" loading="lazy" decoding="async" alt="Legacy crew cutting a trench for new plumbing inside a commercial build-out" /></div>
+                <figcaption>Commercial build-out: the crew trenching for new plumbing lines</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/water-treatment-system.jpg" width="1080" height="1350" loading="lazy" decoding="async" alt="Installed whole-home water treatment system with blue filter housings" /></div>
+                <figcaption>Installed whole-home water treatment system with blue filter housings</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/tankless-water-heater-copper.jpg" width="664" height="830" loading="lazy" decoding="async" alt="Tankless water heater with copper piping" /></div>
+                <figcaption>Tankless water heater with copper piping</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/new-project-15.jpg" width="1800" height="3200" loading="lazy" decoding="async" alt="Water heater and filtration system with copper piping" /></div>
+                <figcaption>Water heater and filtration system with copper piping</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/garage-mechanical-wall.jpg" width="1080" height="1350" loading="lazy" decoding="async" alt="Garage mechanical wall with tankless water heater and water filters" /></div>
+                <figcaption>Garage mechanical wall with tankless water heater and water filters</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/exterior-tankless-install.jpg" width="1080" height="1350" loading="lazy" decoding="async" alt="Exterior tankless unit mounted on brick wall" /></div>
+                <figcaption>Exterior tankless unit mounted on brick wall</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/vanity-plumbing-finish.jpg" width="1152" height="2048" loading="lazy" decoding="async" alt="Bathroom vanity plumbing and countertop installation in progress" /></div>
+                <figcaption>Bathroom vanity plumbing and countertop installation in progress</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/drop-in-tub-install.jpg" width="1152" height="2048" loading="lazy" decoding="async" alt="Drop-in bathtub installed below glass block windows" /></div>
+                <figcaption>Drop-in bathtub installed below glass block windows</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/clawfoot-tub-fixture.jpg" width="1536" height="2048" loading="lazy" decoding="async" alt="Clawfoot bathtub with brass wall-mounted fixture" /></div>
+                <figcaption>Clawfoot bathtub with brass wall-mounted fixture</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/custom-shower-fixtures.jpg" width="1536" height="2048" loading="lazy" decoding="async" alt="Custom tiled shower with brass shower fixtures running water" /></div>
+                <figcaption>Custom tiled shower with brass shower fixtures running water</figcaption>
+              </figure>
+            </li>
+            <li class="reel-card">
+              <figure>
+                <div class="reel-frame"><img src="../assets/new-project-12.jpg" width="1800" height="3200" loading="lazy" decoding="async" alt="Pot filler installed above commercial-style kitchen range" /></div>
+                <figcaption>Pot filler installed above commercial-style kitchen range</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Why Legacy -->
+      <section class="sect" id="about" data-cam="about" aria-labelledby="about-title">
+        <div class="wrap about-grid">
+          <div>
+            <h2 id="about-title" class="display" data-split>Family values. Professional standards.</h2>
+            <blockquote class="pull">
+              <p>
+                The best plumbing disappears into the home because the planning, layout, and finish work were handled
+                correctly from the start.
+              </p>
+            </blockquote>
+            <h3 class="about-sub">Details matter before the walls close.</h3>
+            <ul class="check-list" role="list">
+              <li>Coordinated rough-ins for custom residential builds</li>
+              <li>Water heater, filtration, fixture, and drain expertise</li>
+              <li>Neat mechanical rooms and carefully finished baths</li>
+            </ul>
+            <div class="about-cta">
+              <p>Send plans, a project address, or a short description and Legacy will help map the plumbing scope.</p>
+              <div class="btn-row">
+                <a class="btn btn-copper" href="/v3/book.html" data-magnet>Book a free estimate</a>
+                <a class="btn btn-line" href="#request" data-magnet>Request service</a>
+              </div>
+            </div>
+          </div>
+          <figure class="team">
+            <div class="team-frame">
+              <img
+                src="../assets/legacy-team-cropped.jpg"
+                width="1145"
+                height="700"
+                loading="lazy"
+                decoding="async"
+                alt="The two partners of Legacy Plumbing Group smiling together"
+              />
+            </div>
+            <figcaption>
+              <span class="team-names">The partners behind Legacy Plumbing Group.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Reviews: the scene dims to a backdrop. -->
+      <section class="sect" id="reviews" data-cam="reviews" aria-labelledby="reviews-title">
+        <div class="wrap">
+          <h2 id="reviews-title" class="display" data-split>Professional, punctual, and careful.</h2>
+          <ul class="reviews" role="list">
+            <li>
+              <figure>
+                <blockquote>
+                  <p>&ldquo;They found the leak fast, explained the repair, and left the cabinet cleaner than they found it.&rdquo;</p>
+                </blockquote>
+                <figcaption>Sarah M.</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <blockquote>
+                  <p>&ldquo;Our water heater went out at night. Legacy had us back up the next morning with no pressure tactics.&rdquo;</p>
+                </blockquote>
+                <figcaption>Daniel R.</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <blockquote>
+                  <p>&ldquo;Clear pricing, respectful crew, and the drain has been perfect since they cleared it.&rdquo;</p>
+                </blockquote>
+                <figcaption>Monica T.</figcaption>
+              </figure>
+            </li>
+          </ul>
+          <p class="review-cta">
+            Worked with us?
+            <a href="REPLACE_GOOGLE_REVIEW_URL" target="_blank" rel="noopener">Leave us a Google review</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Service area: in 3D, Nashville and Knoxville are two glowing nodes joined by a live pipe. -->
+      <section class="sect" id="area" data-cam="area" aria-labelledby="area-title">
+        <div class="wrap">
+          <div class="sect-head backed">
+            <h2 id="area-title" class="display" data-split>Where we work</h2>
+            <p class="lead">
+              Homeowners, builders, and businesses across Middle and East Tennessee. Call the number for your area.
+            </p>
+          </div>
+          <div class="cities">
+            <span class="area-pipe" aria-hidden="true"></span>
+            <div class="city">
+              <h3 class="city-name">Nashville <span class="city-region">&amp; Middle Tennessee</span></h3>
+              <a class="city-phone tel" href="tel:+16155249201">615-524-9201</a>
+            </div>
+            <div class="city">
+              <h3 class="city-name">Knoxville <span class="city-region">&amp; East Tennessee</span></h3>
+              <a class="city-phone tel" href="tel:+18653080794">865-308-0794</a>
+            </div>
+          </div>
+          <p class="area-note">
+            Emergency calls are answered 24/7. If you can do it safely, shut off the main water valve while you wait.
+          </p>
+        </div>
+      </section>
+
+      <!-- Request service: the walls close behind the form. -->
+      <section class="sect" id="request" data-cam="request" aria-labelledby="request-title">
+        <div class="wrap request-grid">
+          <div>
+            <h2 id="request-title" class="display" data-split>Tell us what is going on.</h2>
+            <p class="lead">
+              Send the basics and we will follow up to schedule a visit. For urgent leaks or active flooding, call now.
+            </p>
+            <ul class="phone-list" role="list">
+              <li>
+                <a class="phone-line" href="tel:+16155249201"><span>Nashville</span><strong class="tel">615-524-9201</strong></a>
+              </li>
+              <li>
+                <a class="phone-line" href="tel:+18653080794"><span>Knoxville</span><strong class="tel">865-308-0794</strong></a>
+              </li>
+            </ul>
+            <p class="book-note">
+              Planning a remodel or a new build? <a href="/v3/book.html">Book a free estimate</a> and pick a time that
+              works for you.
+            </p>
+          </div>
+
+          <div class="frost">
+            <form
+              name="service-request-v3"
+              method="POST"
+              action="/v3/thank-you"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              enctype="multipart/form-data"
+            >
+              <input type="hidden" name="form-name" value="service-request-v3" />
+              <p class="hidden-field" aria-hidden="true">
+                <label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+              </p>
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="f-name">Name</label>
+                  <input id="f-name" type="text" name="name" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="f-phone">Phone</label>
+                  <input id="f-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" required />
+                </div>
+                <div class="field">
+                  <label for="f-email">Email <span class="optional">(optional)</span></label>
+                  <input id="f-email" type="email" name="email" autocomplete="email" />
+                </div>
+                <div class="field">
+                  <label for="f-address">Address or city</label>
+                  <input id="f-address" type="text" name="address" autocomplete="street-address" />
+                </div>
+                <div class="field field-full">
+                  <label for="f-service">Service needed</label>
+                  <select id="f-service" name="service">
+                    <option value="">Choose one</option>
+                    <option>Emergency repair</option>
+                    <option>Drain / leak repair</option>
+                    <option>Water heater (tankless)</option>
+                    <option>Water treatment</option>
+                    <option>Bathroom fixtures</option>
+                    <option>New construction rough-in</option>
+                    <option>Commercial bid</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <fieldset class="field field-full">
+                  <legend>How soon do you need us?</legend>
+                  <div class="choice-row">
+                    <label class="choice">
+                      <input type="radio" name="urgency" value="Emergency today" />
+                      <span>Emergency today</span>
+                    </label>
+                    <label class="choice">
+                      <input type="radio" name="urgency" value="This week" />
+                      <span>This week</span>
+                    </label>
+                    <label class="choice">
+                      <input type="radio" name="urgency" value="Planning a project" />
+                      <span>Planning a project</span>
+                    </label>
+                  </div>
+                </fieldset>
+                <div class="field field-full">
+                  <label for="f-message">What is going on?</label>
+                  <textarea id="f-message" name="message" rows="5"></textarea>
+                </div>
+                <div class="field field-full">
+                  <label for="f-photo">Add a photo <span class="optional">(optional)</span></label>
+                  <input id="f-photo" type="file" name="photo" accept="image/*" aria-describedby="f-photo-hint" />
+                  <p class="field-hint" id="f-photo-hint">A photo of the problem or the space helps us quote. One image, up to 8 MB.</p>
+                </div>
+                <div class="form-submit field-full">
+                  <button class="btn btn-copper" type="submit" data-magnet>Send request</button>
+                  <p>We use your details only to respond to this request.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <img class="footer-logo" src="../assets/legacy-logo.jpg" width="1024" height="1024" loading="lazy" decoding="async" alt="Legacy Plumbing Group" />
+          <p>Residential and commercial plumbing for Middle and East Tennessee.</p>
+        </div>
+        <div>
+          <h2 class="footer-h">Call</h2>
+          <ul class="footer-list" role="list">
+            <li><span class="region-label">Nashville &amp; Middle TN</span><a class="tel" href="tel:+16155249201">615-524-9201</a></li>
+            <li><span class="region-label">Knoxville &amp; East TN</span><a class="tel" href="tel:+18653080794">865-308-0794</a></li>
+          </ul>
+        </div>
+        <nav aria-label="Footer">
+          <h2 class="footer-h">Explore</h2>
+          <ul class="footer-list" role="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">Why Legacy</a></li>
+            <li><a href="#area">Service area</a></li>
+            <li><a href="#request">Request service</a></li>
+            <li><a href="/v3/book.html">Book an estimate</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="footer-h">Follow</h2>
+          <ul class="footer-list" role="list">
+            <li>
+              <a class="social-link" href="https://www.facebook.com/LegacyPG26" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.4h2.4V4.6c-.5-.1-1.9-.2-3.5-.2-3.5 0-5.8 2.1-5.8 6v3.3H3.4V18h3.7v5.6h4.5V18h3.6l.6-4.3h-4.2v-2.9c0-1.2.3-2.4 2.4-2.4Z" /></svg>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://www.instagram.com/legacy.plumbing.group/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2.4h8.4c3 0 5.4 2.4 5.4 5.4v8.4c0 3-2.4 5.4-5.4 5.4H7.8c-3 0-5.4-2.4-5.4-5.4V7.8c0-3 2.4-5.4 5.4-5.4Zm8.4 17.1c1.8 0 3.3-1.5 3.3-3.3V7.8c0-1.8-1.5-3.3-3.3-3.3H7.8c-1.8 0-3.3 1.5-3.3 3.3v8.4c0 1.8 1.5 3.3 3.3 3.3h8.4ZM12 7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 7.5a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Zm5-8.5a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z" /></svg>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://www.tiktok.com/@legacy_plumbing_group" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.2 2.5c.3 2.5 1.8 4.2 4.3 4.4v4.1c-1.5 0-2.9-.4-4.2-1.2v6.5c0 4.1-2.5 6.8-6.3 6.8-3.5 0-6.1-2.5-6.1-5.8 0-3.8 3-6.5 7.2-6.1v4.2c-1.6-.3-2.8.4-2.8 1.8 0 1.1.8 1.8 1.9 1.8 1.3 0 2-.8 2-2.5v-14h4Z" /></svg>
+                TikTok
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="REPLACE_GOOGLE_REVIEW_URL" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z" /></svg>
+                Review us on Google
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="footer-base">
+          <p>&copy; 2026 Legacy Plumbing Group</p>
+          <p>TN License #REPLACE_LICENSE</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-bar">
+      <button type="button" class="btn btn-copper" popovertarget="call-sheet">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8Z" /></svg>
+        Call
+      </button>
+      <a class="btn btn-line" href="#request">Request service</a>
+    </div>
+
+    <div class="grain" aria-hidden="true"></div>
+  </body>
+</html>
