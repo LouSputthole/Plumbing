@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Legacy Plumbing Group — design options</title>
+  <link rel="icon" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy:#0b1d38; --gold:#c9a961; --paper:#f7f5f1; --ink:#15181d; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,system-ui,sans-serif; background:var(--paper); color:var(--ink); }
+    header { background:var(--navy); color:#fff; padding:40px 16px 48px; text-align:center; }
+    header img { width:180px; height:auto; }
+    h1 { font-family:"Source Serif 4",Georgia,serif; font-size:clamp(1.8rem,4vw,2.6rem); margin:16px 0 8px; }
+    header p { margin:0; color:#cfd6e2; max-width:620px; margin-inline:auto; }
+    main { max-width:1140px; margin:-24px auto 64px; padding:0 16px; display:grid; gap:24px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+    a.card { display:block; background:#fff; border-radius:8px; overflow:hidden; text-decoration:none; color:inherit;
+      box-shadow:0 2px 12px rgba(0,0,0,.08); border-top:4px solid var(--gold); transition:transform .15s, box-shadow .15s; }
+    a.card:hover, a.card:focus-visible { transform:translateY(-3px); box-shadow:0 8px 24px rgba(0,0,0,.14); outline:none; }
+    a.card:focus-visible { box-shadow:0 0 0 3px var(--gold); }
+    a.card img { width:100%; height:auto; aspect-ratio:900/593; object-fit:cover; object-position:top; display:block; background:#07101f; }
+    .body { padding:18px 20px 22px; }
+    .num { font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; color:#7a5e24; font-weight:700; }
+    h2 { font-family:"Source Serif 4",Georgia,serif; margin:4px 0 8px; font-size:1.35rem; }
+    .body p { margin:0; color:#4a505a; font-size:.95rem; line-height:1.5; }
+    .open { display:inline-block; margin-top:14px; font-weight:600; color:var(--navy); }
+    footer { text-align:center; color:#6b7280; font-size:.85rem; padding:0 16px 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/assets/legacy-wordmark.png" width="841" height="458" alt="Legacy Plumbing Group" />
+    <h1>Three directions for the new site</h1>
+    <p>Same words, same photos, same request form and booking page in every version. Pick the one that feels like Legacy.</p>
+  </header>
+  <main>
+    <a class="card" href="/">
+      <img src="/assets/previews/v1.jpg" width="900" height="593" alt="Version one: light, classic layout" />
+      <div class="body">
+        <div class="num">Option 01</div>
+        <h2>Classic</h2>
+        <p>Light, clean, trustworthy. Navy and champagne gold, serif headlines, cards and a Tennessee service map. The safe, timeless choice.</p>
+        <span class="open">Open version 1 →</span>
+      </div>
+    </a>
+    <a class="card" href="/v2/">
+      <img src="/assets/previews/v2.jpg" width="900" height="593" alt="Version two: dark shop-drawing layout with copper" />
+      <div class="body">
+        <div class="num">Option 02</div>
+        <h2>Shop Drawing</h2>
+        <p>Dark and bold. Copper instead of gold, huge condensed headlines, a numbered spec sheet of services, horizontal project strip. Feels like a drawing set.</p>
+        <span class="open">Open version 2 →</span>
+      </div>
+    </a>
+    <a class="card" href="/v3/">
+      <img src="/assets/previews/v3.jpg" width="900" height="593" alt="Version three: 3D copper pipe experience" />
+      <div class="body">
+        <div class="num">Option 03</div>
+        <h2>Pressure</h2>
+        <p>The showpiece. A 3D copper pipe network builds itself as you scroll, water glowing through the lines. Best on a laptop or desktop with the sound of jaws dropping.</p>
+        <span class="open">Open version 3 →</span>
+      </div>
+    </a>
+  </main>
+  <footer>Preview builds. Phone numbers are live; the request form only works on the published site.</footer>
+</body>
+</html>
