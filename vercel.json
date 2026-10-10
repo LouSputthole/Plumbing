@@ -4,7 +4,7 @@
     { "source": "/", "destination": "/versions", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/v1", "destination": "/index.html" },
+    { "source": "/v1", "destination": "/" },
     { "source": "/thank-you", "destination": "/thank-you.html" },
     { "source": "/v2/thank-you", "destination": "/v2/thank-you.html" },
     { "source": "/v3/thank-you", "destination": "/v3/thank-you.html" }
