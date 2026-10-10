@@ -45,18 +45,21 @@ Placeholders to fill before launch (grep `REPLACE_`):
 
 ## 3. Booking + calendar (free, open source)
 
-**Cal.com** (open source, free plan: 1 user, unlimited bookings, Google Calendar sync,
-email + SMS reminders, workflows, HTML embed). Setup:
-1. One Cal.com account for the business, connected to ONE shared Google Calendar that both
-   partners have on their phones. (Two Cal.com users would need the Teams plan, ~$15/user/mo.
-   Not worth it until someone other than the partners is being scheduled.)
-2. Event type **"Free estimate — 45 min"**: availability Mon–Fri 8–5 (whatever they want),
-   30-min buffer, 2-hour minimum notice, booking questions: *address*, *what are we looking at*,
-   *photos (optional)*, phone required.
-3. Workflows (free): SMS + email reminder 24 h before; SMS reminder 1 h before;
-   **"after event ends" email with the Google review link** (this is the review automation).
-4. Paste the `username/event-slug` into the site as `REPLACE_CAL_LINK`.
-5. Put the same booking link in the Google Business Profile "Appointment" field and in the
+**Cal.com** (open source, free plan: 1 user, unlimited bookings and calendars, Google Calendar
+sync, email + SMS notifications, HTML embed). Checked 2026-10-09: free workflows are
+**templated only** (no custom message text), so the review ask lives in Square/Jobber instead (§7).
+Setup:
+1. The partners work markets three hours apart, so **one free Cal.com account per partner**
+   (Nashville, Knoxville), each connected to that partner's Google Calendar. Free, and each
+   booking lands on the right person. (One shared account with two hosts needs Teams,
+   $12/user/mo yearly. Not worth it until techs are being scheduled.)
+2. Event type **"Free estimate — 45 min"** on each: availability Mon–Fri 8–5 (whatever they want),
+   30–60 min buffer for drive time, 24-hour minimum notice, booking questions: *address*,
+   *ZIP*, *what are we looking at*, phone required. Ask them to text photos to the number.
+3. Templated reminders: email + SMS 24 h before, SMS 1 h before.
+4. Send both `username/event-slug` links to Lou → site `/book` gets a Nashville / Knoxville
+   switch (replaces `REPLACE_CAL_LINK`).
+5. Put the same booking links in the Google Business Profile "Appointment" field and in the
    Instagram/Facebook bios.
 
 Upgrade when: the crew grows past the two partners, or they want dispatch/route planning →
@@ -82,31 +85,38 @@ They advertise 24/7 priority calls, so missed calls are lost money.
   to email, spam screening. Put it on the site later instead of the two personal numbers if they
   want one public number.
 - Upgrade when: they want auto "sorry we missed you, text us here" replies or call recording →
-  OpenPhone ($15/user/mo, has missed-call auto-text).
+  **Quo** (formerly OpenPhone; ~$15/user/mo yearly, $19 monthly, plus ~$20 one-time text
+  registration). Shared inbox, auto-replies, one number per market.
 
 ## 6. Estimates, invoices, payments
 
 - **Square Invoices (free)**: estimate → invoice from the phone, customer pays by text/email
   link. Fees: 3.3% + 30¢ online, 2.6% + 15¢ tap-to-pay in person (rates as of Jan 2026).
   Automatic payment reminders are built in. Cash/check still cost nothing.
-- Upgrade when: >~30 jobs/month, a third tech, or they want one app for everything →
-  **Jobber Core ($39/mo, 1 user)**: quotes, scheduling, dispatch, invoicing, review requests,
-  online booking. At that point Jobber's booking widget replaces Cal.com and its forms
-  replace Netlify Forms. (Housecall Pro is the alternative at $59/mo.)
+- Upgrade when: >~30 jobs/month, techs need their own schedules, or they want one app for
+  everything → a field-service app: quotes, scheduling, dispatch, invoicing, review requests,
+  online booking, consumer financing, QuickBooks sync. Its booking widget replaces Cal.com and
+  its request form replaces Netlify Forms (swap one embed on `/book` and the form on `/`).
+  Prices from third-party guides, mid-2026; confirm on the vendor page:
+  - **Jobber**: Core ~$49/mo (1 user); Connect ~$129–139/mo (up to 5 users, the real tier
+    once techs log in). 14-day free trial.
+  - **Housecall Pro**: Basic $59/mo yearly or $79 monthly (1 user); Essentials $149–189/mo
+    (up to 5 users).
 
 ## 7. Reviews
 
 Three touchpoints, all automated once set up:
-1. Cal.com post-event workflow email (§3).
-2. Square invoice "paid" confirmation → add the review link to the invoice message template.
-3. Thank-you page and footer link on the site.
+1. Square invoice message template → the review link rides on every invoice (Jobber/HCP do
+   automatic follow-up review requests once they're in).
+2. Thank-you page and footer link on the site.
+3. Partner texts the link from the driveway when the customer is happy. Highest hit rate.
 
 Reply to every review inside GBP; it ranks.
 
 ## 8. Social
 
 Instagram is the working feed. In Meta Business Suite, set Instagram → Facebook auto-share so
-every post lands on both. TikTok stays manual. Put the Cal.com link in all three bios.
+every post lands on both. TikTok stays manual. Put `/book` in all three bios.
 
 ## 9. Domain, email, analytics
 
@@ -124,7 +134,7 @@ every post lands on both. TikTok stays manual. Put the Cal.com link in all three
 | Netlify, Cal.com, GBP, Google Voice, Square Invoices | $0 |
 | Domain | ~$1/mo |
 | Square card fees | per transaction |
-| Optional later: OpenPhone $15, Jobber $39, Workspace $7 | |
+| Optional later: Quo ~$15/user, Workspace $7/user, Jobber ~$49 (1 user) / ~$129+ (crew) | |
 
 ## 11. Launch checklist (who does what)
 
@@ -135,8 +145,8 @@ Lou (today):
 - [ ] Buy the domain, attach to Netlify.
 
 Partners (one evening, phone only):
-- [ ] Create Cal.com account + shared Google Calendar, event type, workflows (§3). Send Lou the
-      link → `REPLACE_CAL_LINK`.
+- [ ] Each partner: free Cal.com account on their Google Calendar, estimate event type,
+      reminders (§3). Send Lou both links → `/book` region switch.
 - [ ] Claim Google Business Profile, upload photos, get review link (§4) → `REPLACE_GOOGLE_REVIEW_URL`.
 - [ ] Send licence number → `REPLACE_LICENSE`.
 - [ ] Gmail → SMS forwarding filters (§2).
@@ -150,3 +160,15 @@ Partners (one evening, phone only):
 - Per-city SEO pages: add Nashville / Knoxville / Franklin / Brentwood pages only once GBP is
   live and Search Console shows what people search.
 - Online payment on the site: nobody pre-pays a plumber.
+
+## 13. Later, once the basics run (in rough order of payoff)
+- **Google Local Services Ads** ("Google Guaranteed" badge above the map): pay per lead, not
+  per click. Needs licence, insurance and background checks. Turn on once GBP has reviews.
+- **Consumer financing** for water heaters / repipes (Wisetack, built into Jobber and HCP):
+  bigger tickets close faster.
+- **Maintenance plans** (annual water-heater flush + inspection): recurring revenue and a
+  reason to call back every year. Recurring jobs in Jobber/HCP.
+- **After-hours AI answering** (Jobber AI Receptionist or Quo's built-in agent): backs up the
+  24/7 promise when nobody can pick up. Trial before paying.
+- **Bookkeeping**: Wave (free) or QuickBooks Online if their accountant wants it; Jobber/HCP
+  sync to QuickBooks.
